@@ -1,3 +1,4 @@
+// @flow
 import { autobind } from 'core-decorators';
 import React, { Component } from 'react';
 import { BrowserRouter, Match, Link } from 'react-router';

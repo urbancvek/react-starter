@@ -5,7 +5,9 @@
   "description": "Starter project for React.",
   "scripts": {
     "start": "webpack-dev-server --config dev.webpack.config.js",
-    "deploy": "webpack --config prod.webpack.config.js; netlify deploy; rm static/bundle.js"
+    "deploy": "webpack --config prod.webpack.config.js; netlify deploy; rm static/bundle.js",
+    "lint": "eslint .",
+    "flow": "flow check . --show-all-errors"
   },
   "repository": {
     "type": "git",
@@ -29,6 +31,9 @@
     "babel-preset-es2015": "^6.18.0",
     "babel-preset-react": "^6.16.0",
     "babel-preset-stage-2": "^6.16.0",
+    "eslint": "^3.12.2",
+    "eslint-config-shopsterdotio": "0.0.3",
+    "flow-bin": "^0.37.4",
     "netlify-cli": "^1.1.0",
     "react-hot-loader": "^3.0.0-beta.6",
     "webpack": "^2.2.0-rc.2",

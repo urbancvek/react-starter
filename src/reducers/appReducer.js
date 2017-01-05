@@ -1,6 +1,9 @@
-const initialState = {};
+// @flow
+type State = {};
 
-const appReducer = (state = initialState, action) => {
+const initialState: State = {};
+
+const appReducer = (state: State = initialState, action: any) => {
   switch (action.type) {
     default: return state;
   }

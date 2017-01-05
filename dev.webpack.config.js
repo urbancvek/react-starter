@@ -1,3 +1,4 @@
+// @flow
 const { resolve } = require('path');
 const webpack = require('webpack');
 
@@ -7,7 +8,7 @@ module.exports = {
     'react-hot-loader/patch',
     'webpack-dev-server/client?http://127.0.0.1:8080',
     'webpack/hot/only-dev-server',
-    './index.js'
+    './index.js',
   ],
   output: {
     path: resolve(__dirname, 'static'),
@@ -34,7 +35,7 @@ module.exports = {
       {
         test: /\.js$/,
         use: ['babel-loader'],
-        exclude: /node_modules/
+        exclude: /node_modules/,
       },
     ],
   },
