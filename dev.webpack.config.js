@@ -3,7 +3,7 @@ const { resolve } = require('path');
 const webpack = require('webpack');
 
 module.exports = {
-  devtool: 'cheap-module-eval-source-map',
+  devtool: 'source-map',
   entry: [
     'react-hot-loader/patch',
     'webpack-dev-server/client?http://127.0.0.1:8080',
