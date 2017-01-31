@@ -1,7 +1,7 @@
 // @flow
 import { autobind } from 'core-decorators';
 import React, { Component } from 'react';
-import { BrowserRouter, Match, Link } from 'react-router';
+import { BrowserRouter, Route, Link } from 'react-router-dom';
 
 import HomePage from 'pages/HomePage';
 import AboutPage from 'pages/AboutPage';
@@ -15,8 +15,8 @@ class App extends Component {
           <Link to="/">Home</Link>
           <Link to="/about">About</Link>
 
-          <Match exactly pattern="/" component={HomePage} />
-          <Match pattern="/about" component={AboutPage} />
+          <Route exact path="/" component={HomePage} />
+          <Route path="/about" component={AboutPage} />
         </div>
       </BrowserRouter>
     );
