@@ -14,8 +14,8 @@ ReactDOM.render(
   <Provider store={store}>
     <App />
   </Provider>,
-  rootNode)
-;
+  rootNode
+);
 
 if (module.hot) {
   module.hot.accept('App', () => {
