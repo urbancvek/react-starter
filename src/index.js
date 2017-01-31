@@ -1,19 +1,13 @@
 // @flow
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { Provider } from 'react-redux';
 
 import App from 'App';
-import configureStore from 'reducers/store';
 
 const rootNode = document.getElementById('root');
 
-const store = configureStore();
-
 ReactDOM.render(
-  <Provider store={store}>
-    <App />
-  </Provider>,
+  <App />,
   rootNode
 );
 
@@ -22,9 +16,7 @@ if (module.hot) {
     const NextApp = require('App').default;
 
     ReactDOM.render(
-      <Provider store={store}>
-        <NextApp />
-      </Provider>,
+      <NextApp />,
       rootNode
     );
   });
